@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cd \"d:\\\\Introduction To Large Language Model\\\\Language_Identification_IndicCorpV2\"; if \\(-not \\(Test-Path tests\\\\__init__.py\\)\\) { New-Item -ItemType File tests\\\\__init__.py | Out-Null }; python -m tests.test_components)",
+      "Bash(python -c ' *)",
+      "PowerShell(Get-ChildItem \"D:\\\\Introduction To Large Language Model\\\\Language_Identification_IndicCorpV2\" -Recurse -File | Select-Object FullName, @{n='MB';e={[math]::Round\\($_.Length/1MB,2\\)}} | Format-Table -AutoSize | Out-String -Width 200)",
+      "PowerShell(Get-ChildItem \"D:\\\\Introduction To Large Language Model\\\\Assignment_2_TFIDF_Normalization\" -Recurse -File | Select-Object FullName, @{n='MB';e={[math]::Round\\($_.Length/1MB,2\\)}} | Format-Table -AutoSize | Out-String -Width 200)",
+      "PowerShell(python --version)",
+      "PowerShell(python -c \"import tokenizers, sys; print\\('tokenizers', tokenizers.__version__\\)\")",
+      "PowerShell(python -c \"import requests; print\\('requests ok'\\)\")",
+      "PowerShell(python \"C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--Introduction-To-Large-Language-Model\\\\1e283b87-e2a7-4152-be85-504281424be6\\\\scratchpad\\\\speedtest.py\")",
+      "PowerShell(python \"C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--Introduction-To-Large-Language-Model\\\\1e283b87-e2a7-4152-be85-504281424be6\\\\scratchpad\\\\pretok_check.py\")",
+      "PowerShell(python \"C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--Introduction-To-Large-Language-Model\\\\1e283b87-e2a7-4152-be85-504281424be6\\\\scratchpad\\\\smoke.py\")",
+      "PowerShell(python \"C:\\\\Users\\\\Lenovo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--Introduction-To-Large-Language-Model\\\\1e283b87-e2a7-4152-be85-504281424be6\\\\scratchpad\\\\smoke.py\" 2>&1)",
+      "Bash(python -c \"import tokenizers,os;print\\(os.path.dirname\\(tokenizers.__file__\\)\\)\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(awk '{print $5, $9}')",
+      "PowerShell(winget install --id GitHub.cli --accept-source-agreements --accept-package-agreements --silent)"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+﻿========================================================================
+STEP 1  Downloading Hindi text and splitting paragraphs into sentences
+========================================================================
+    cached: 1,022,000 sentences in sentences.txt
+    1,022,000 sentences, 18.1 words / 91 chars each
+
+========================================================================
+STEP 2  Building length-stratified train / dev / test splits
+========================================================================
+    train 1,019,999  words min/median/max = 3/16/190  mean 18.1
+    dev       1,000  words min/median/max = 3/20/120  mean 25.4
+    test      1,000  words min/median/max = 3/20/104  mean 25.3
+
+========================================================================
+STEP 3  Training 4 sizes x 3 vocabularies x 2 algorithms = 24 tokenizers
+========================================================================
+
+  [ 1/24] BPE       train=100,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.115   test tokens/word = 1.104   UNK = 0.000%   (1s)
+
+  [ 2/24] WordPiece train=100,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.112   test tokens/word = 1.102   UNK = 0.000%   (1s)
+
+  [ 3/24] BPE       train=100,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.084   test tokens/word = 1.071   UNK = 0.000%   (2s)
+
+  [ 4/24] WordPiece train=100,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.081   test tokens/word = 1.069   UNK = 0.000%   (2s)
+
+  [ 5/24] BPE       train=100,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.057   test tokens/word = 1.048   UNK = 0.000%   (2s)
+
+  [ 6/24] WordPiece train=100,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.055   test tokens/word = 1.046   UNK = 0.000%   (2s)
+
+  [ 7/24] BPE       train=300,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.113   test tokens/word = 1.103   UNK = 0.000%   (2s)
+
+  [ 8/24] WordPiece train=300,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.110   test tokens/word = 1.100   UNK = 0.000%   (2s)
+
+  [ 9/24] BPE       train=300,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.079   test tokens/word = 1.067   UNK = 0.000%   (3s)
+
+  [10/24] WordPiece train=300,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.078   test tokens/word = 1.066   UNK = 0.000%   (3s)
+
+  [11/24] BPE       train=300,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.050   test tokens/word = 1.043   UNK = 0.000%   (3s)
+
+  [12/24] WordPiece train=300,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.049   test tokens/word = 1.041   UNK = 0.000%   (3s)
+
+  [13/24] BPE       train=500,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.113   test tokens/word = 1.103   UNK = 0.000%   (4s)
+
+  [14/24] WordPiece train=500,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.111   test tokens/word = 1.101   UNK = 0.000%   (4s)
+
+  [15/24] BPE       train=500,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.079   test tokens/word = 1.068   UNK = 0.000%   (4s)
+
+  [16/24] WordPiece train=500,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.077   test tokens/word = 1.066   UNK = 0.000%   (4s)
+
+  [17/24] BPE       train=500,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.049   test tokens/word = 1.042   UNK = 0.000%   (5s)
+
+  [18/24] WordPiece train=500,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.048   test tokens/word = 1.040   UNK = 0.000%   (5s)
+
+  [19/24] BPE       train=1,000,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.114   test tokens/word = 1.105   UNK = 0.000%   (7s)
+
+  [20/24] WordPiece train=1,000,000  vocab=20,000
+      vocab built = 20,000   dev tokens/word = 1.112   test tokens/word = 1.102   UNK = 0.000%   (6s)
+
+  [21/24] BPE       train=1,000,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.079   test tokens/word = 1.068   UNK = 0.000%   (7s)
+
+  [22/24] WordPiece train=1,000,000  vocab=30,000
+      vocab built = 30,000   dev tokens/word = 1.077   test tokens/word = 1.066   UNK = 0.000%   (7s)
+
+  [23/24] BPE       train=1,000,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.049   test tokens/word = 1.041   UNK = 0.000%   (7s)
+
+  [24/24] WordPiece train=1,000,000  vocab=50,000
+      vocab built = 50,000   dev tokens/word = 1.048   test tokens/word = 1.039   UNK = 0.000%   (7s)
+
+========================================================================
+DONE  24 configurations in 2.0 minutes
+      report -> D:\Introduction To Large Language Model\assignment_3\outputs\RESULTS.md
+========================================================================
